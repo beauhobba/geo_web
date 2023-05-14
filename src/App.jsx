@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import Coffee from "./coffee"
 // -33.89575474841882, 151.20372411350206
 function App() {
   const [lat, setLat] = React.useState(-42.880554);
@@ -23,11 +24,11 @@ function App() {
 
 
   return (
-    <div style={{"background-color": "#282c34", "text-align": "center", "min-height": "100vh", "display": "flex", "justify-content": "center", "flex-direction": "column"}}>
-      <div style={{"color": "white", "fontSize": 40}}>
+    <div style={{"background-color": "#9E5546", "text-align": "center", alignItems: 'center', "min-height": "100vh", "display": "flex", "justify-content": "center", "flex-direction": "column"}}>
+      <div style={{"color": "#FAC71E", "fontSize": 40}}>
         <p>Latitude and Longitude to Postcode Converter</p>
       </div>
-      <div style={{"color": "white"}}>
+      <div style={{"color": "#FAC71E"}}>
         <form onSubmit={handle_post}>
           <label>
             Latitude:
@@ -41,9 +42,16 @@ function App() {
         </form>
       </div>
 
-      <div style={{"color": "white"}}>
-        <label>Result: {post}</label>
+      <div style={{color: "#FAC71E", flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        <p style={{width: "50%", paddingRight:10}}>Result: </p>
+        <p style={{width: "50%"}}>{post} </p>
       </div>
+
+      <div style={{"color": "#FAC71E", padding: 30}}>
+        <label>API Access: Currently Not Available</label>
+      </div>
+        <Coffee/>
+
     </div>
   );
 }
