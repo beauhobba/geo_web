@@ -32,13 +32,13 @@ function App() {
         <form onSubmit={handle_post}>
           <label>
             Latitude:
-            <input type="text" name="name" value={lat} onChange={handle_lat} />
+            <input type="text" name="name" value={lat} onChange={handle_lat} style={{backgroundColor: "#FAC71E", borderColor: "#38202D", border: '0px', padding: 3}} />
           </label>
           <label>
             Longitude:
-            <input type="text" name="name" value={lon} onChange={handle_lon} />
+            <input type="text" name="name" value={lon} onChange={handle_lon} style={{backgroundColor: "#FAC71E", borderColor: "#38202D", border: '0px', padding: 3}} />
           </label>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit"  style={{backgroundColor: "#FAC71E", borderColor: "#38202D", padding: 3}} />
         </form>
       </div>
 
