@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+
 import React, { useState } from "react";
 // -33.89575474841882, 151.20372411350206
 function App() {
@@ -22,12 +21,22 @@ function App() {
     // setPost(e.target.value)
   }
 
+  // background-color: #282c34;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  // font-size: calc(10px + 2vmin);
+  // color: white;
+
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <div style={{"background-color": "#282c34", "text-align": "center", "min-height": "100vh", "display": "flex", "justify-content": "center", "flex-direction": "column"}}>
+      <div style={{"color": "white", "fontSize": 40}}>
         <p>Latitude and Longitude to Postcode Converter</p>
-      </header>
-      <div>
+      </div>
+      <div style={{"color": "white"}}>
         <form onSubmit={handle_post}>
           <label>
             Latitude:
@@ -41,7 +50,7 @@ function App() {
         </form>
       </div>
 
-      <div>
+      <div style={{"color": "white"}}>
         <label>Result: {post}</label>
       </div>
     </div>
