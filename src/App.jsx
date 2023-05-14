@@ -6,6 +6,11 @@ function App() {
   const [lat, setLat] = React.useState(-42.880554);
   const [lon, setLon] = React.useState(147.324997);
   const [post, setPost] = React.useState(2000);
+  const [locality, setLocality] = React.useState('Sydney');
+  const [state, setState] = React.useState('NSW');
+
+
+
 
   function handle_lat(e) {
     e.preventDefault();
@@ -18,15 +23,14 @@ function App() {
 
   function handle_post(e) {
     e.preventDefault();
-    // Set the post here
-    // setPost(e.target.value)
+    setPost('Cannot process result yet')
   }
 
 
   return (
     <div style={{"background-color": "#F0E4CE", "text-align": "center", alignItems: 'center', "min-height": "100vh", "display": "flex", "justify-content": "center", "flex-direction": "column"}}>
       <div style={{"color": "#396BA8", "fontSize": 40}}>
-        <p>Latitude and Longitude to Postcode Converter</p>
+        <p>Latitude and Longitude Converter Australia</p>
       </div>
       <div style={{color: "#396BA8", justifyContent: 'center', display: 'flex', flexDirection: 'row', width: '100%', padding: 5}}>
         <form onSubmit={handle_post}>
@@ -44,7 +48,9 @@ function App() {
 
       <div style={{color: "#396BA8", flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <p style={{width: "50%", paddingRight:10}}>Result: </p>
-        <p style={{width: "50%"}}>{post} </p>
+        <p style={{width: "25%"}}>{post} </p>
+        <p style={{width: "25%"}}>{locality} </p>
+        <p style={{width: "25%"}}>{state} </p>
       </div>
 
       <div style={{"color": "#396BA8", padding: 30}}>
