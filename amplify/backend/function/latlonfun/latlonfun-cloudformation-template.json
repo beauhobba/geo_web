@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "geowebLambdaRoleedb3a553",
+            "geowebLambdaRolee20fdf43",
             {
               "Fn::Join": [
                 "",
                 [
-                  "geowebLambdaRoleedb3a553",
+                  "geowebLambdaRolee20fdf43",
                   "-",
                   {
                     "Ref": "env"

@@ -54,5 +54,23 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_latlonfun_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "latlonfun"
+        }
+      ]
+    },
+    "AMPLIFY_function_latlonfun_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "latlonfun"
+        }
+      ]
+    }
   }
 }

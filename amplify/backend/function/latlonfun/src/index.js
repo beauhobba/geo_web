@@ -6,7 +6,7 @@
  */
 // const { getLatLonPostcodes } = require('./getLatLonPostcodes');
 const { API } = require('aws-amplify');
-
+const process = require('process')
 // async function getLatLonPostcodes() {
 //     try {
 //       const graphqlQuery = `
@@ -50,6 +50,8 @@ const { API } = require('aws-amplify');
     
 exports.handler = async (event) => {
     console.log('Here');
+    console.log('Here');
+    console.log('Here');
     // const postcodes = await getLatLonPostcodes();
 
     // console.log(postcodes);
@@ -58,7 +60,7 @@ exports.handler = async (event) => {
 
     console.log(`EVENT: ${JSON.stringify(event)}`);
     return {
-        statusCode: 200,
+        statusCode: 400,
     //  Uncomment below to enable CORS requests
     //  headers: {
     //      "Access-Control-Allow-Origin": "*",
