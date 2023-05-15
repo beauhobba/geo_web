@@ -40,8 +40,8 @@ function App() {
 
 
   return (
-    <div style={{"background-color": "#F0E4CE", "text-align": "center", alignItems: 'center', "min-height": "100vh", "display": "flex", "justify-content": "center", "flex-direction": "column"}}>
-      <div style={{"color": "#396BA8", "fontSize": 40}}>
+    <div style={{backgroundColor: "#F0E4CE", textAlign: "center", alignItems: 'center', minHeight: "100vh", display: "flex", justifyContent: "center", flexDirection: "column"}}>
+      <div style={{color: "#396BA8", fontSize: 40}}>
         <p>Latitude and Longitude Converter Australia</p>
       </div>
       <div style={{color: "#396BA8", justifyContent: 'center', display: 'flex', flexDirection: 'row', width: '100%', padding: 5}}>
@@ -65,10 +65,13 @@ function App() {
         <p style={{width: "25%"}}>{state} </p>
       </div>
 
-      <div style={{"color": "#396BA8", padding: 30}}>
+      <div style={{color: "#396BA8", padding: 30}}>
         <label>API Access: Currently Not Available</label>
       </div>
         <Coffee/>
+        {/* <div style={{color: "#396BA8", fontSize: 40}}>
+        <p>Latitude and Longitude Converter Australia</p>
+      </div> */}
 
     </div>
   );
