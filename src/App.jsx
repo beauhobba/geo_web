@@ -1,6 +1,8 @@
 
 import React, { useState } from "react";
 import Coffee from "./coffee"
+import { API } from "aws-amplify";
+
 // -33.89575474841882, 151.20372411350206
 function App() {
   const [lat, setLat] = React.useState(-42.880554);
@@ -10,7 +12,7 @@ function App() {
   const [state, setState] = React.useState('NSW');
 
 
-
+  const myAPI = "latlonfun";
 
   function handle_lat(e) {
     e.preventDefault();
@@ -24,6 +26,16 @@ function App() {
   function handle_post(e) {
     e.preventDefault();
     setPost('Cannot process result yet')
+    let data = {};
+    API.post(myAPI, "/latlonfun", { body: data })
+      .then((response) => {
+        console.log(response);
+        setPost("Thankyou for joining the waitlist!");
+      })
+      .catch((error) => {
+        console.log(error);
+        setPost("There was an error with joining the waitlist");
+      });
   }
 
 
@@ -47,7 +59,7 @@ function App() {
       </div>
 
       <div style={{color: "#396BA8", flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-        <p style={{width: "50%", paddingRight:10}}>Result: </p>
+        <p style={{width: "25%", paddingRight:10}}>Result: </p>
         <p style={{width: "25%"}}>{post} </p>
         <p style={{width: "25%"}}>{locality} </p>
         <p style={{width: "25%"}}>{state} </p>
