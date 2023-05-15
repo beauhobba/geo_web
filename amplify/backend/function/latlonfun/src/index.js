@@ -5,8 +5,8 @@
  * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
  */
 // const { getLatLonPostcodes } = require('./getLatLonPostcodes');
-const { API } = require('aws-amplify');
-const process = require('process')
+// const { API } = require('aws-amplify');
+// const process = require('process')
 // async function getLatLonPostcodes() {
 //     try {
 //       const graphqlQuery = `

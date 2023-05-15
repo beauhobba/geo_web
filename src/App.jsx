@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Coffee from "./coffee"
 import { API } from "aws-amplify";
 
-// -33.89575474841882, 151.20372411350206
 function App() {
   const [lat, setLat] = React.useState(-42.880554);
   const [lon, setLon] = React.useState(147.324997);
@@ -30,17 +29,17 @@ function App() {
     API.post(myAPI, "/latlonfun", { body: data })
       .then((response) => {
         console.log(response);
-        setPost("Thankyou for joining the waitlist!");
+        setPost("Data has been retrieved successfully");
       })
       .catch((error) => {
         console.log(error);
-        setPost("There was an error with joining the waitlist");
+        setPost("There was an error retrieving the data");
       });
   }
 
 
   return (
-    <div style={{backgroundColor: "#F0E4CE", textAlign: "center", alignItems: 'center', minHeight: "100vh", display: "flex", justifyContent: "center", flexDirection: "column"}}>
+    <div style={{backgroundColor: "#F0E4CE", textAlign: "center", alignItems: 'center', minHeight: "100vh", display: "flex", justifyContent: "start", flexDirection: "column"}}>
       <div style={{color: "#396BA8", fontSize: 40}}>
         <p>Latitude and Longitude Converter Australia</p>
       </div>
@@ -65,7 +64,7 @@ function App() {
         <p style={{width: "25%"}}>{state} </p>
       </div>
 
-      <div style={{color: "#396BA8", padding: 30}}>
+      <div style={{color: "#396BA8", padding: 30, paddingTop: 50}}>
         <label>API Access: Currently Not Available</label>
       </div>
         <Coffee/>
