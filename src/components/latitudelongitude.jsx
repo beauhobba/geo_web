@@ -1,9 +1,10 @@
-
-import React, { useState } from "react";
+import React, {Text} from "react";
 import Coffee from "./coffee"
 import { API } from "aws-amplify";
 
-function App() {
+
+
+function LatitudeLongitude() {
   const [lat, setLat] = React.useState(-42.880554);
   const [lon, setLon] = React.useState(147.324997);
   const [post, setPost] = React.useState(2000);
@@ -37,7 +38,6 @@ function App() {
       });
   }
 
-
   return (
     <div style={{backgroundColor: "#F0E4CE", textAlign: "center", alignItems: 'center', minHeight: "100vh", display: "flex", justifyContent: "start", flexDirection: "column"}}>
       <div style={{color: "#396BA8", fontSize: 40}}>
@@ -67,13 +67,9 @@ function App() {
       <div style={{color: "#396BA8", padding: 30, paddingTop: 50}}>
         <label>API Access: Currently Not Available</label>
       </div>
-        <Coffee/>
-        {/* <div style={{color: "#396BA8", fontSize: 40}}>
-        <p>Latitude and Longitude Converter Australia</p>
-      </div> */}
-
     </div>
   );
 }
 
-export default App;
+
+export default LatitudeLongitude;
