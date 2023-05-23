@@ -7,7 +7,8 @@ import {
   Navigation,
   Footer,
   Home,
-  LatitudeLongitude
+  LatitudeLongitude,
+  RegionCentres
 } from "./components";
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/latitudelongitude" element={<LatitudeLongitude />} />
+      <Route path="/regioncentres" element={<RegionCentres />} />
     </Routes>
     <Footer />
   </Router>,

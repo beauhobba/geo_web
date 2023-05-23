@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 
 function Navigation() {
   return (
-    <div style={{display: 'flex', flexDirection: 'row', width: '100%', backgroundColor: '#EDEDED'}} >
-      <nav className="navbar navbar-expand navbar-light"  style={{
-      backgroundColor: '#EDEDED',
+    <div style={{display: 'flex', flexDirection: 'row', width: '100%', backgroundColor: '#8EE4AF'}} >
+      <nav style={{
+      backgroundColor: '#8EE4AF',
     }}>
         <div className="container">
           <div>
@@ -19,7 +19,9 @@ function Navigation() {
                 <NavLink  to="/latitudelongitude" style={{paddingRight: 20}}>
                   Latitude Longitude
                 </NavLink>
-
+                <NavLink  to="/regioncentres" style={{paddingRight: 20}}>
+                  Region Centres
+                </NavLink>
           </div>
         </div>
       </nav>
