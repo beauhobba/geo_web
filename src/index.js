@@ -8,7 +8,7 @@ import {
   Footer,
   Home,
   LatitudeLongitude,
-  RegionCentres
+  RegionCentres,
 } from "./components";
 
 ReactDOM.render(
