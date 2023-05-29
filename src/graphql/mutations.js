@@ -11,6 +11,20 @@ export const createLatLonPostcodes = /* GraphQL */ `
       lat
       lon
       postcode
+      locality
+      state
+      category
+      type
+      SA3
+      SA3_name
+      SA4
+      SA4_name
+      region
+      lga_code
+      LGA_region
+      electroate
+      charge_zone
+      status
       createdAt
       updatedAt
     }
@@ -26,6 +40,20 @@ export const updateLatLonPostcodes = /* GraphQL */ `
       lat
       lon
       postcode
+      locality
+      state
+      category
+      type
+      SA3
+      SA3_name
+      SA4
+      SA4_name
+      region
+      lga_code
+      LGA_region
+      electroate
+      charge_zone
+      status
       createdAt
       updatedAt
     }
@@ -41,6 +69,20 @@ export const deleteLatLonPostcodes = /* GraphQL */ `
       lat
       lon
       postcode
+      locality
+      state
+      category
+      type
+      SA3
+      SA3_name
+      SA4
+      SA4_name
+      region
+      lga_code
+      LGA_region
+      electroate
+      charge_zone
+      status
       createdAt
       updatedAt
     }

@@ -1,11 +1,39 @@
-import React, { Text } from "react";
+import React, { Text, useEffect  } from "react";
+
+import { Link } from "react-router-dom";
+import {Amplify, API, Auth} from 'aws-amplify'
+
+import awsconfig from '../aws-exports';
+import { Storage } from 'aws-amplify';
+
 import Coffee from "./coffee";
-import { API } from "aws-amplify";
+
+// configure amplify
+// this can be added in index.js as well
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
+
+
+
 
 function RegionCentres() {
   // f.write('MB_CODE21\tLATITUDE\tLONGITUDE\tMB_CAT21
   // \tLOCI_URI21\tAUS_CODE21\tGCC_CODE21\tGCC_NAME21\tAUS_NAME21
   // \tCHG_LBL21\tCHG_FLAG21\tSTE_NAME21\tSTE_CODE21\tAREASQKM21\tSA1_CODE21\tSA2_CODE21\tSA2_NAME21\tSA3_CODE21\tSA3_NAME21\tSA4_CODE21\tSA4_NAME21\n')
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        console.log('here')
+        let imageKeys = await Storage.list('')
+        console.log(imageKeys)
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
 
   return (
     <div
@@ -65,6 +93,8 @@ function RegionCentres() {
               <li>SA4_NAME21</li>
             </ul>
           </p>
+          <Link to="/Downloads/mesh_centres.txt" target="_blank" download>.txt</Link>
+          <Link to="/Downloads/mesh_centres.xlsx" target="_blank" download>.xlsx</Link>
         </div>
       </div>
     </div>

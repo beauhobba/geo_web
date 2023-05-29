@@ -2,6 +2,7 @@ import React, { Text } from "react";
 import Coffee from "./coffee";
 import { API } from "aws-amplify";
 
+
 function Home() {
   return (
     <div

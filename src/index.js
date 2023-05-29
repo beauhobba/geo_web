@@ -10,6 +10,9 @@ import {
   LatitudeLongitude,
   RegionCentres,
 } from "./components";
+import { Amplify, Storage } from 'aws-amplify';
+import awsconfig from './aws-exports';
+Amplify.configure(awsconfig);
 
 ReactDOM.render(
   <Router>

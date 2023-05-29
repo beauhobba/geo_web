@@ -1,0 +1,14 @@
+{
+  "resourceName": "downloads",
+  "policyUUID": "4f7d23e5",
+  "bucketName": "geo",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Triggeref3ef874",
+  "groupAccess": {}
+}

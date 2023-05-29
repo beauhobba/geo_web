@@ -21,8 +21,15 @@
       "function": {
         "latlonfun": {
           "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
-          "s3Key": "amplify-builds/latlonfun-6743314a55327a323271-build.zip"
+          "s3Key": "amplify-builds/latlonfun-372b4a46616b6c6b3076-build.zip"
+        },
+        "S3Triggeref3ef874": {
+          "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
+          "s3Key": "amplify-builds/S3Triggeref3ef874-6b477164744374324234-build.zip"
         }
+      },
+      "storage": {
+        "downloads": {}
       }
     }
   }
