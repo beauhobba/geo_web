@@ -11,8 +11,8 @@ Amplify.configure(awsconfig);
 function MeshBlockCentre() {
   return (
 
-
-        <><div style={{ color: colors.txt, justifyItems: 'center'}}>
+        <div style={{backgroundColor: colors.box}}>
+        <div style={{ color: colors.txt, justifyItems: 'center', backgroundColor: colors.box}}>
           <h style={{ fontSize: 30 }}>Mesh Block Centroids</h>
       </div>
       <div style={{ flexDirection: "row", display: "flex",  color: colors.txt_2}}>
@@ -88,7 +88,7 @@ function MeshBlockCentre() {
           <div>
             <img src="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/Photos/mesh_tassie_centroid.png" style={{height:350, paddingTop:20}}></img>
           </div>
-          </>
+          </div>
   );
 }
 

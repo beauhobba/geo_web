@@ -43,8 +43,7 @@ function Home() {
           <br></br>
           <p style={{ color: "red" }}>ToDo</p>
           <ol>
-            <li>SA2/SA3/MESH Block to Latitude Longitude</li>
-            <li>SA2/SA3 Block Centres (Latitude Longitude)</li>
+            <li>LGA Block to Latitude Longitude</li>
             <li>
               SA2/SA3/MESH Block/Latitude and Longitude/Postcode to Remoteness
             </li>
