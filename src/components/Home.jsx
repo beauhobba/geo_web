@@ -1,5 +1,5 @@
 import React, { Text } from "react";
-import Coffee from "./Coffee";
+import Coffee from "./CoffeeBuy";
 import colors from "./Colours"
 
 
