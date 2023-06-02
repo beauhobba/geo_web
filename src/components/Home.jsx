@@ -1,6 +1,6 @@
 import React, { Text } from "react";
-import Coffee from "./coffee";
-import { API } from "aws-amplify";
+import Coffee from "./Coffee";
+import colors from "./Colours"
 
 
 function Home() {
@@ -10,14 +10,14 @@ function Home() {
         display: "flex",
         justifyContent: "center",
         flexDirection: "row",
-        backgroundColor: "#5CDB95",
+        backgroundColor: colors.bkg,
+        minHeight: '100vh'
       }}
     >
       <div
         style={{
           textAlign: "center",
           alignItems: "center",
-          minHeight: "100vh",
           display: "flex",
           justifyContent: "start",
           flexDirection: "column",
@@ -25,17 +25,17 @@ function Home() {
         }}
       >
         <h1
-          style={{ color: "#EDF5E1", fontSize: 50, fontFamily: "sans-serif" }}
+          style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif" }}
         >
           DATABASE AND QUERIES
           <br />
           OF AUSTRAIA
         </h1>
-        <p style={{ color: "#EDF5E1" }}>
-          A website dedicated to providing easy to access data about Australia
+        <p style={{ color: colors.txt_2 }}>
+          This website is dedicated to providing easy to access Australian data
           <br />
-          Statistics are created using all python scripts located here:{" "}
-          <a href="https://github.com/beauhobba/Database-Tools">
+          Statistics are created using python scripts located here:{" "}
+          <a href="https://github.com/beauhobba/Database-Tools" style={{ color: colors.txt_3 }}>
             Geo Database Tools
           </a>
         </p>
@@ -44,7 +44,7 @@ function Home() {
           <p style={{ color: "red" }}>ToDo</p>
           <ol>
             <li>SA2/SA3/MESH Block to Latitude Longitude</li>
-            <li>SA2/SA3/MESH Block Centres (Latitude Longitude)</li>
+            <li>SA2/SA3 Block Centres (Latitude Longitude)</li>
             <li>
               SA2/SA3/MESH Block/Latitude and Longitude/Postcode to Remoteness
             </li>
@@ -59,17 +59,30 @@ function Home() {
 
       <div
         style={{
-          padding: 20,
-          color: "#EDF5E1",
+          paddingTop: 40,
+          paddingLeft: 80,
+          color: colors.txt,
           display: "flex",
           alignItems: "center",
           flexDirection: "column",
         }}
       >
-        <h2>About Me</h2>
+        <h2 style={{marginBottom: 0}}>About Me</h2>
+        <p  style={{marginBottom: -10}}>
+          I use data a lot 
+          </p>
+          <p  style={{marginBottom: -10}}>
+          I like animals 
+          </p>
+          <p  style={{marginBottom: -10}}>
+          I am a tron  engineer
+          </p>
+          <p>
+          I have a <a href="https://www.roostgame.com" style={{ color: colors.txt_3 }}>card game </a>
+        </p>
         <p>
-          Check out my work at{" "}
-          <a href="https://www.beauhobba.com">Beau Hobba</a>
+          More of my{" "}
+          <a href="https://www.beauhobba.com" style={{ color: colors.txt_3 }}>work</a>
         </p>
         <Coffee />
       </div>

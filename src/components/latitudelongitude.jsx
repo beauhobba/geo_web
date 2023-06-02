@@ -1,5 +1,5 @@
 import React, { Text } from "react";
-import Coffee from "./coffee";
+import Coffee from "./Coffee";
 import { API } from "aws-amplify";
 
 function LatitudeLongitude() {

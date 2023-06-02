@@ -9,6 +9,7 @@ import {
   Home,
   LatitudeLongitude,
   RegionCentres,
+  Code,
 } from "./components";
 import { Amplify, Storage } from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -19,6 +20,7 @@ ReactDOM.render(
     <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/code" element={<Code />} />
       <Route path="/latitudelongitude" element={<LatitudeLongitude />} />
       <Route path="/regioncentres" element={<RegionCentres />} />
     </Routes>
