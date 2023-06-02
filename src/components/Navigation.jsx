@@ -26,7 +26,7 @@ function Navigation() {
               Latitude Longitude
             </NavLink>
             <NavLink to="/regioncentres" style={{ paddingRight: 20 }}>
-              Region Centres
+              Centroids
             </NavLink>
           </div>
         </div>
