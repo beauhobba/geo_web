@@ -4,3 +4,4 @@ export { default as Home } from "./Home";
 export {default as LatitudeLongitude} from "./latitudelongitude"
 export {default as RegionCentres} from "./regioncentres"
 export {default as Code} from "./Code"
+export {default as Coffee} from "./Coffee"

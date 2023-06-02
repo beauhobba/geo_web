@@ -18,11 +18,19 @@ function RegionCentres() {
         flexDirection: "column",
       }}
     >
-      <div style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif" }}>
+      <div style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif"}}>
         Centroids
-        <p style={{ fontSize: 20 }}>
+        <p style={{ fontSize: 20, margin: 0  }}>
           Converts data regions into latitude and longitude
         </p>
+      </div>
+      <div style={{ color: colors.txt_3, fontSize: 10, fontFamily: "sans-serif", paddingBottom: 20 }}>
+        <ul>
+          <li>Mesh Block Centroids</li>
+          <li>SA3 Centroids</li>
+          <li>SA2 Centroids</li>
+          <li>LGA Centroids</li>
+        </ul>
       </div>
       <div
         style={{
