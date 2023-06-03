@@ -11,7 +11,20 @@ Amplify.configure(awsconfig);
 function SA3Centre() {
   return (
 
-<div style={{backgroundColor: colors.box, marginTop: 20}}>
+    <div
+      style={{
+        backgroundColor: colors.box,
+        marginTop: 20,
+        width: "50%",
+        justifyItems: "center",
+        alignContent: "center",
+        display: "flex",
+        flexDirection: "column",
+        borderRadius: 15,
+        padding: 10,
+        marginBottom: 20,
+      }}
+    >
     <div style={{ color: colors.txt, justifyItems: 'center'}}>
           <h style={{ fontSize: 30 }}>SA3 Centroids</h>
       </div>

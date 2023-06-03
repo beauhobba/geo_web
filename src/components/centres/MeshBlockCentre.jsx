@@ -11,7 +11,20 @@ Amplify.configure(awsconfig);
 function MeshBlockCentre() {
   return (
 
-        <div style={{backgroundColor: colors.box}}>
+    <div
+      style={{
+        backgroundColor: colors.box,
+        marginTop: 20,
+        width: "50%",
+        justifyItems: "center",
+        alignContent: "center",
+        display: "flex",
+        flexDirection: "column",
+        borderRadius: 15,
+        padding: 10,
+        marginBottom: 20,
+      }}
+    >
         <div style={{ color: colors.txt, justifyItems: 'center', backgroundColor: colors.box}}>
           <h style={{ fontSize: 30 }}>Mesh Block Centroids</h>
       </div>
@@ -37,12 +50,14 @@ function MeshBlockCentre() {
                       <li>AUS_NAME21:Australia</li>
                       <li>CHG_LBL21: Change value</li>
                       <li>CHG_FLAG21: Flag or indicator associated with a change</li>
+                      <li>STE_NAME21: Name of a state or province</li>
+                      <li>STE_CODE21: Code or identifier for a state or province</li>
                   </ul>
               </div>
               <div>
                   <ul  style={{ listStyle: 'none', padding: 0 }}>
-                      <li>STE_NAME21: Name of a state or province</li>
-                      <li>STE_CODE21: Code or identifier for a state or province</li>
+
+
                       <li>AREASQKM21: Area measurement in square kilometers</li>
                       <li>
                           SA1_CODE21: Code or identifier for Statistical Area Level 1

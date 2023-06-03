@@ -9,6 +9,7 @@ Amplify.configure(awsconfig);
 // Auth.configure(awsconfig);
 
 function LGACentre() {
+
   return (
     <div
       style={{
@@ -19,6 +20,9 @@ function LGACentre() {
         alignContent: "center",
         display: "flex",
         flexDirection: "column",
+        borderRadius: 15,
+        padding: 10,
+        marginBottom: 20,
       }}
     >
       <div style={{ color: colors.txt }}>
@@ -26,7 +30,7 @@ function LGACentre() {
       </div>
       <div
         style={{ flexDirection: "row", display: 'flex', color: colors.txt_2 }}>
-        <div style={{ justifyContent: "flex-start", display: 'flex'}}>
+        <div>
           <ul style={{ listStyle: "none", padding: 0 }}>
             <li>LATITUDE: Latitude of mesh block centre </li>
             <li>LONGITUDE: Longitude of mesh block centre</li>
@@ -36,9 +40,9 @@ function LGACentre() {
         </div>
         <div>
           <ul style={{ listStyle: "none", padding: 0 }}>
-            <li>STE_NAME21: Name of a state or province</li>
-            <li>STE_CODE21: Code or identifier for a state or province</li>
-            <li>AREASQKM21: Area measurement in square kilometers</li>
+            <li>STE_NAME20: Name of a state or province</li>
+            <li>STE_CODE20: Code or identifier for a state or province</li>
+            <li>AREASQKM20: Area measurement in square kilometers</li>
           </ul>
         </div>
       </div>

@@ -1,11 +1,33 @@
 import { Amplify } from "aws-amplify";
-import { MeshBlockCentre, SA3Centre, SA2Centre, SA4Centre, SA1Centre, LGACentre } from "./centres";
+import {
+  MeshBlockCentre,
+  SA3Centre,
+  SA2Centre,
+  SA4Centre,
+  SA1Centre,
+  LGACentre,
+} from "./centres";
 import awsconfig from "../aws-exports";
 import colors from "./Colours";
+import React from "react";
 
 Amplify.configure(awsconfig);
 
 function RegionCentres() {
+  const [active, setActive] = React.useState("none");
+
+  const handleClick = (type) => {
+    setActive(type);
+  };
+  const buttonStyle = {
+    color: colors.txt_2,
+    fontSize: 15,
+    fontFamily: 'sans-serif',
+    backgroundColor: colors.box,
+    height: 30,
+    margin: 4,
+  };
+
   return (
     <div
       style={{
@@ -22,27 +44,30 @@ function RegionCentres() {
         style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif" }}
       >
         Centroids
-        <p style={{ fontSize: 20, margin: 0 }}>
+        <p style={{ fontSize: 20, margin: 0, marginBottom: 10 }}>
           Converts data regions into latitude and longitude
         </p>
       </div>
-      <div
-        style={{
-          color: colors.txt_3,
-          fontSize: 10,
-          fontFamily: "sans-serif",
-          paddingBottom: 20,
-        }}
-      >
-        <ul>
-          <li>Mesh Block Centroids</li>
-          <li>SA1 Centroids</li>
-          <li>SA2 Centroids</li>
-          <li>SA3 Centroids</li>
-          <li>SA4 Centroids</li>
-          <li>LGA Centroids</li>
-        </ul>
-      </div>
+    <div>
+      <button style={buttonStyle} onClick={() => handleClick('lga')}>
+        LGA Centroids
+      </button>
+      <button style={buttonStyle} onClick={() => handleClick('mb')}>
+        Mesh Block Centroids
+      </button>
+      <button style={buttonStyle} onClick={() => handleClick('sa1')}>
+        SA1 Centroids
+      </button>
+      <button style={buttonStyle} onClick={() => handleClick('sa2')}>
+        SA2 Centroids
+      </button>
+      <button style={buttonStyle} onClick={() => handleClick('sa3')}>
+        SA3 Centroids
+      </button>
+      <button style={buttonStyle} onClick={() => handleClick('sa4')}>
+        SA4 Centroids
+      </button>
+    </div>
       <div
         style={{
           // backgroundColor: colors.box,
@@ -52,13 +77,19 @@ function RegionCentres() {
           flexDirection: "column",
         }}
       >
-        <MeshBlockCentre />
-        <SA1Centre/>
-        <SA2Centre />
-        <SA3Centre />
-        <SA4Centre />
-        <LGACentre />
-
+        {active === "mb" ? (
+          <MeshBlockCentre />
+        ) : active === "sa1" ? (
+          <SA1Centre />
+        ) : active === "sa2" ? (
+          <SA2Centre />
+        ) : active == "sa3" ? (
+          <SA3Centre />
+        ) : active === "sa4" ? (
+          <SA4Centre />
+        ) : active === "lga" ? (
+          <LGACentre />
+        ) : null}
       </div>
     </div>
   );
