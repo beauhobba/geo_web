@@ -1,5 +1,5 @@
 import { Amplify } from "aws-amplify";
-import { MeshBlockCentre, SA3Centre, SA2Centre, SA4Centre, SA1Centre } from "./centres";
+import { MeshBlockCentre, SA3Centre, SA2Centre, SA4Centre, SA1Centre, LGACentre } from "./centres";
 import awsconfig from "../aws-exports";
 import colors from "./Colours";
 
@@ -36,9 +36,9 @@ function RegionCentres() {
       >
         <ul>
           <li>Mesh Block Centroids</li>
-          <li>SA3 Centroids</li>
           <li>SA1 Centroids</li>
           <li>SA2 Centroids</li>
+          <li>SA3 Centroids</li>
           <li>SA4 Centroids</li>
           <li>LGA Centroids</li>
         </ul>
@@ -53,10 +53,12 @@ function RegionCentres() {
         }}
       >
         <MeshBlockCentre />
-        <SA3Centre />
-        <SA2Centre />
-        <SA4Centre />
         <SA1Centre/>
+        <SA2Centre />
+        <SA3Centre />
+        <SA4Centre />
+        <LGACentre />
+
       </div>
     </div>
   );
