@@ -41,7 +41,7 @@ function Home() {
         </p>
         <div style={{ color: "#EDF5E1" }}>
           <br></br>
-          <p style={{ color: "red" }}>ToDo</p>
+          {/* <p style={{ color: "red" }}>ToDo</p>
           <ol>
             <li>
               SA2/SA3/MESH Block/Latitude and Longitude/Postcode to Remoteness
@@ -52,7 +52,7 @@ function Home() {
               SA2/SA3/MESH Block/Latitude and Longitude/Postcode to Population
             </li>
             <li>APIS/DATABASE section</li>
-          </ol>
+          </ol> */}
         </div>
         <Graph/>
       </div>

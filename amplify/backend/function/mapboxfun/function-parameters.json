@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "api": {
+      "geoweb": [
+        "Query"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "mapbox",
+      "environmentVariableName": "MAPBOX"
+    }
+  ]
+}

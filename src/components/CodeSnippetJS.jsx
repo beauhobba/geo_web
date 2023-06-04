@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import colors from "./Colours";
+
+
+const CodeSnippetJS = () => {
+const code = `import React, { useEffect } from 'react';
 import Plotly from 'plotly.js-dist';
 import Papa from 'papaparse';
 import colors from "./Colours"
 import g_data from './LGA_centres.txt'
-
-import { API } from "aws-amplify";
-
-const myAPI = "mapbox";
-
 
 function MapComponent() {
   useEffect(() => {
@@ -15,22 +15,20 @@ function MapComponent() {
     fetch(g_data)
     .then(response => response.text())
     .then(data => {
-      const parsedData = Papa.parse(data, { header: true }).data;
-      const lga = parsedData.filter(row => row['LATITUDE'] && row['LONGITUDE']);
-  
-      const lga_centres_latitudes = lga.map(row => parseFloat(row['LATITUDE'].replace(',', '.')));
-      const lga_centres_longitudes = lga.map(row => parseFloat(row['LONGITUDE'].replace(',', '.')));
-      const lga_centre_names = lga.map(row => row['LGA_NAME22']);
-  
-        API.get(myAPI, "/mapbox")
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error)
-        });
-    
+      const parsedData = Papa.parse(data,
+         { header: true }).data;
 
+      const lga = parsedData.filter(row =>
+         row['LATITUDE'] && row['LONGITUDE']);
+  
+      const lga_centres_latitudes = lga.map(row => 
+        parseFloat(row['LATITUDE'].replace(',', '.')));
+
+      const lga_centres_longitudes = lga.map(row =>
+         parseFloat(row['LONGITUDE'].replace(',', '.')));
+
+      const lga_centre_names = lga.map(row =>
+         row['LGA_NAME22']);
 
         const trace1 = {
           type: 'scattermapbox',
@@ -59,7 +57,7 @@ function MapComponent() {
               lon: 133.4
             },
             style: 'dark', 
-            accesstoken: "pk.eyJ1IjoiYmVhdWhvYmJhIiwiYSI6ImNsZzFqZzNjdjFoZXYzZXA2NjZvankydXcifQ.l3ukg3WXsGukMmMvf_PvbA",
+            accesstoken: "YOUR TOKEN HERE",
             zoom:3.4
           },
           autosize: true,
@@ -94,3 +92,17 @@ function MapComponent() {
 }
 
 export default MapComponent;
+`;
+
+  const lines = code.split('\n');
+
+  return (
+    <code style={{ background: colors.box, color: colors.txt_2, padding: '5px', fontFamily: 'Consolas, monospace', textAlign: 'left', paddingLeft: 20, paddingRight: 20}}>
+      {lines.map((line, index) => (
+        <div key={index}>{line.replace(/\t/g, '\u00A0\u00A0\u00A0\u00A0') || <br />}</div>
+      ))}
+    </code>
+  );
+};
+
+export default CodeSnippetJS;

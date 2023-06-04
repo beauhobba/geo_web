@@ -58,6 +58,22 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "mapboxfun": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput",
+            "GraphQLAPIKeyOutput"
+          ],
+          "category": "api",
+          "resourceName": "geoweb"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -90,6 +106,30 @@
         {
           "category": "function",
           "resourceName": "latlonfun"
+        }
+      ]
+    },
+    "AMPLIFY_function_mapboxfun_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mapboxfun"
+        }
+      ]
+    },
+    "AMPLIFY_function_mapboxfun_mapbox": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mapboxfun"
+        }
+      ]
+    },
+    "AMPLIFY_function_mapboxfun_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mapboxfun"
         }
       ]
     }

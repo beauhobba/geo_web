@@ -22,7 +22,7 @@ function RegionCentres() {
   const buttonStyle = {
     color: colors.txt_2,
     fontSize: 15,
-    fontFamily: 'sans-serif',
+    fontFamily: "sans-serif",
     backgroundColor: colors.box,
     height: 30,
     margin: 4,
@@ -48,26 +48,26 @@ function RegionCentres() {
           Converts data regions into latitude and longitude
         </p>
       </div>
-    <div>
-      <button style={buttonStyle} onClick={() => handleClick('lga')}>
-        LGA Centroids
-      </button>
-      <button style={buttonStyle} onClick={() => handleClick('mb')}>
-        Mesh Block Centroids
-      </button>
-      <button style={buttonStyle} onClick={() => handleClick('sa1')}>
-        SA1 Centroids
-      </button>
-      <button style={buttonStyle} onClick={() => handleClick('sa2')}>
-        SA2 Centroids
-      </button>
-      <button style={buttonStyle} onClick={() => handleClick('sa3')}>
-        SA3 Centroids
-      </button>
-      <button style={buttonStyle} onClick={() => handleClick('sa4')}>
-        SA4 Centroids
-      </button>
-    </div>
+      <div>
+        <button style={buttonStyle} onClick={() => handleClick("lga")}>
+          LGA Centroids
+        </button>
+        <button style={buttonStyle} onClick={() => handleClick("mb")}>
+          Mesh Block Centroids
+        </button>
+        <button style={buttonStyle} onClick={() => handleClick("sa1")}>
+          SA1 Centroids
+        </button>
+        <button style={buttonStyle} onClick={() => handleClick("sa2")}>
+          SA2 Centroids
+        </button>
+        <button style={buttonStyle} onClick={() => handleClick("sa3")}>
+          SA3 Centroids
+        </button>
+        <button style={buttonStyle} onClick={() => handleClick("sa4")}>
+          SA4 Centroids
+        </button>
+      </div>
       <div
         style={{
           // backgroundColor: colors.box,

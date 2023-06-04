@@ -26,6 +26,11 @@
         "S3Triggeref3ef874": {
           "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
           "s3Key": "amplify-builds/S3Triggeref3ef874-6533337a6237332f7464-build.zip"
+        },
+        "mapboxfun": {
+          "mapbox": "pk.eyJ1IjoiYmVhdWhvYmJhIiwiYSI6ImNsZzFqZzNjdjFoZXYzZXA2NjZvankydXcifQ.l3ukg3WXsGukMmMvf_PvbA",
+          "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
+          "s3Key": "amplify-builds/mapboxfun-4d794c43776774544b5a-build.zip"
         }
       },
       "storage": {
