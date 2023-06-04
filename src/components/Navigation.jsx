@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import colors from "./Colours"
 
 function Navigation() {
+  const nav_link_style =  { paddingRight: 20, paddingLeft: 20, color: colors.txt,  textDecoration: 'none' }
   return (
     <div
       style={{
@@ -10,19 +11,21 @@ function Navigation() {
         flexDirection: "row",
         width: "100%",
         backgroundColor: colors.foothead,
+        paddingBottom: 10,
+        paddingTop: 10
       }}
     >
           <div>
-            <NavLink to="/" style={{ paddingRight: 20, paddingLeft: 20, color: colors.txt }}>
+            <NavLink to="/" style={nav_link_style}>
               Home
             </NavLink>
-            <NavLink to="/code" style={{ paddingRight: 20, color: colors.txt  }}>
+            <NavLink to="/code" style={nav_link_style}>
               Code
             </NavLink>
-            <NavLink to="/latitudelongitude" style={{ paddingRight: 20, color: colors.txt  }}>
+            <NavLink to="/latitudelongitude" style={nav_link_style}>
               Latitude Longitude
             </NavLink>
-            <NavLink to="/regioncentres" style={{ paddingRight: 20, color: colors.txt  }}>
+            <NavLink to="/regioncentres" style={nav_link_style}>
               Centroids
             </NavLink>
           </div>

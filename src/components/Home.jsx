@@ -1,7 +1,7 @@
 import React, { Text } from "react";
 import Coffee from "./CoffeeBuy";
 import colors from "./Colours"
-
+import Graph from "./Graph"
 
 function Home() {
   return (
@@ -43,7 +43,6 @@ function Home() {
           <br></br>
           <p style={{ color: "red" }}>ToDo</p>
           <ol>
-            <li>LGA Block to Latitude Longitude</li>
             <li>
               SA2/SA3/MESH Block/Latitude and Longitude/Postcode to Remoteness
             </li>
@@ -55,7 +54,9 @@ function Home() {
             <li>APIS/DATABASE section</li>
           </ol>
         </div>
+        <Graph/>
       </div>
+
 
       <div
         style={{
