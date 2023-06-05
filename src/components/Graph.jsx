@@ -6,7 +6,7 @@ import g_data from './LGA_centres.txt'
 
 import { API } from "aws-amplify";
 
-const myAPI = "mapbox";
+const myAPI = "mapboxfunction";
 
 
 function MapComponent() {
@@ -22,7 +22,7 @@ function MapComponent() {
       const lga_centres_longitudes = lga.map(row => parseFloat(row['LONGITUDE'].replace(',', '.')));
       const lga_centre_names = lga.map(row => row['LGA_NAME22']);
   
-        API.get(myAPI, "/mapbox")
+        API.post(myAPI, "/mapboxfunction", {body: {}})
         .then((response) => {
           console.log(response);
         })

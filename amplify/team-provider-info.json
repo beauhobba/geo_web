@@ -15,26 +15,26 @@
       "auth": {
         "geoweb": {}
       },
-      "api": {
-        "geoweb": {}
-      },
       "function": {
-        "latlonfun": {
-          "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
-          "s3Key": "amplify-builds/latlonfun-372b4a46616b6c6b3076-build.zip"
-        },
         "S3Triggeref3ef874": {
           "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
           "s3Key": "amplify-builds/S3Triggeref3ef874-6533337a6237332f7464-build.zip"
         },
-        "mapboxfun": {
-          "mapbox": "pk.eyJ1IjoiYmVhdWhvYmJhIiwiYSI6ImNsZzFqZzNjdjFoZXYzZXA2NjZvankydXcifQ.l3ukg3WXsGukMmMvf_PvbA",
+        "latlonfun": {
           "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
-          "s3Key": "amplify-builds/mapboxfun-4d794c43776774544b5a-build.zip"
+          "s3Key": "amplify-builds/latlonfun-372b4a46616b6c6b3076-build.zip"
+        },
+        "mapboxfunction": {
+          "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
+          "s3Key": "amplify-builds/mapboxfunction-4a34315970636a4a5a54-build.zip",
+          "mapbox": "pk.eyJ1IjoiYmVhdWhvYmJhIiwiYSI6ImNsZzFqZzNjdjFoZXYzZXA2NjZvankydXcifQ.l3ukg3WXsGukMmMvf_PvbA"
         }
       },
       "storage": {
         "downloads": {}
+      },
+      "api": {
+        "mapboxfunction": {}
       }
     }
   }

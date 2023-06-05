@@ -1,20 +1,18 @@
 {
   "api": {
-    "geoweb": {
-      "dependsOn": [],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [],
-          "defaultAuthentication": {
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
-            },
-            "authenticationType": "API_KEY"
-          }
+    "mapboxfunction": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "mapboxfunction"
         }
-      },
+      ],
       "providerPlugin": "awscloudformation",
-      "service": "AppSync"
+      "service": "API Gateway"
     }
   },
   "auth": {
@@ -59,19 +57,9 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     },
-    "mapboxfun": {
+    "mapboxfunction": {
       "build": true,
-      "dependsOn": [
-        {
-          "attributes": [
-            "GraphQLAPIIdOutput",
-            "GraphQLAPIEndpointOutput",
-            "GraphQLAPIKeyOutput"
-          ],
-          "category": "api",
-          "resourceName": "geoweb"
-        }
-      ],
+      "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
@@ -109,27 +97,27 @@
         }
       ]
     },
-    "AMPLIFY_function_mapboxfun_deploymentBucketName": {
+    "AMPLIFY_function_mapboxfunction_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "mapboxfun"
+          "resourceName": "mapboxfunction"
         }
       ]
     },
-    "AMPLIFY_function_mapboxfun_mapbox": {
+    "AMPLIFY_function_mapboxfunction_mapbox": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "mapboxfun"
+          "resourceName": "mapboxfunction"
         }
       ]
     },
-    "AMPLIFY_function_mapboxfun_s3Key": {
+    "AMPLIFY_function_mapboxfunction_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "mapboxfun"
+          "resourceName": "mapboxfunction"
         }
       ]
     }

@@ -1,11 +1,5 @@
 {
-  "permissions": {
-    "api": {
-      "geoweb": [
-        "Query"
-      ]
-    }
-  },
+  "permissions": {},
   "lambdaLayers": [],
   "environmentVariableList": [
     {

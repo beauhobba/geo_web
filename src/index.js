@@ -11,9 +11,10 @@ import {
   RegionCentres,
   Code,
 } from "./components";
-import { Amplify, Storage } from 'aws-amplify';
+import { Amplify, Storage, API } from 'aws-amplify';
 import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
+API.configure(awsconfig);
 
 ReactDOM.render(
   <Router>
