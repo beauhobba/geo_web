@@ -22,8 +22,8 @@ function Navigation() {
             <NavLink to="/code" style={nav_link_style}>
               Code
             </NavLink>
-            <NavLink to="/latitudelongitude" style={nav_link_style}>
-              Latitude Longitude
+            <NavLink to="/postcodeto" style={nav_link_style}>
+              Postcode
             </NavLink>
             <NavLink to="/regioncentres" style={nav_link_style}>
               Centroids

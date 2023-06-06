@@ -7,7 +7,7 @@ import {
   Navigation,
   Footer,
   Home,
-  LatitudeLongitude,
+  PostcodeTo,
   RegionCentres,
   Code,
 } from "./components";
@@ -22,7 +22,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/code" element={<Code />} />
-      <Route path="/latitudelongitude" element={<LatitudeLongitude />} />
+      <Route path="/postcodeto" element={<PostcodeTo />} />
       <Route path="/regioncentres" element={<RegionCentres />} />
     </Routes>
     <Footer />

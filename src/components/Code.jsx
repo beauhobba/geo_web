@@ -39,7 +39,7 @@ function Code() {
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
-          width: '50%',
+          width: '70%',
           color: colors.txt,
           margin: 20
         }}
@@ -54,7 +54,7 @@ function Code() {
           alignItems: "center",
           display: "flex",
           flexDirection: "column",
-          width: '50%',
+          width: '70%',
           color: colors.txt,
           margin: 20
         }}
