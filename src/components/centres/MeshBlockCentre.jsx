@@ -50,8 +50,8 @@ function MeshBlockCentre() {
                       <li>AUS_NAME21:Australia</li>
                       <li>CHG_LBL21: Change value</li>
                       <li>CHG_FLAG21: Flag or indicator associated with a change</li>
-                      <li>STE_NAME21: Name of a state or province</li>
-                      <li>STE_CODE21: Code or identifier for a state or province</li>
+                      <li>STE_NAME21: Name of a state</li>
+                      <li>STE_CODE21: Code or identifier for a state</li>
                   </ul>
               </div>
               <div>

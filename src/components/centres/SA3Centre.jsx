@@ -52,8 +52,8 @@ function SA3Centre() {
               </div>
               <div>
                   <ul  style={{ listStyle: 'none', padding: 0 }}>
-                      <li>STE_NAME21: Name of a state or province</li>
-                      <li>STE_CODE21: Code or identifier for a state or province</li>
+                      <li>STE_NAME21: Name of a state</li>
+                      <li>STE_CODE21: Code or identifier for a state</li>
                       <li>AREASQKM21: Area measurement in square kilometers</li>
                       <li>
                           SA3_CODE21: Code or identifier for Statistical Area Level 3

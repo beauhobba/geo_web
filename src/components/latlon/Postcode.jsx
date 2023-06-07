@@ -41,31 +41,34 @@ function Postcode() {
           <li>LONGITUDE: Longitude of mesh block centre</li>
           <li>LGA_CODE22: Code of the LGA</li>
           <li>LGA_NAME22: Name of the LGA</li>
-          <li>IRE_CODE21</li>
-          <li>IRE_NAME21</li>
-          <li>SED_CODE22</li>
-          <li>SED_NAME22</li>
-          <li>CED_CODE21</li>
-          <li>CED_NAME21</li>
-          <li>STE_CODE21</li>
-          <li>IAR_CODE21</li>
-          <li>IAR_NAME21</li>
-          <li>ILO_CODE21</li>
-          <li>ILO_NAME21</li>
+          <li>IRE_CODE21: Indigenous Region Codes</li>
+          <li>IRE_NAME21: Indigenous Region Code Names</li>
+          <li>SED_CODE22: State Electoral Division Codes</li>
+          <li>SED_NAME22: State Electoral Division Code Names</li>
+          <li>CED_CODE21: Commonwealth Electoral Division Codes</li>
+          <li>CED_NAME21: Commonwealth Electoral Division Code Names</li>
+          <li>STE_CODE21: Remoteness Code</li>
 
 
-          <li>SA3_CODE21</li>
-          <li>SA3_NAME21</li>
-          <li>SA4_CODE21</li>
-          <li>SA4_NAME21</li>
+
+
+
 
 
         </ul>
       </div>
       <div>
         <ul style={{ listStyle: "none", padding: 0 }}>
-          <li>STE_NAME21: Name of a state or province</li>
-          <li>STE_CODE21: Code or identifier for a state or province</li>
+        <li>IAR_CODE21: Indigenous Area Codes</li>
+        <li>IAR_NAME21: Indigenous Area Code Names</li>
+        <li>ILO_CODE21: Indigenous Location Codes</li>
+          <li>ILO_NAME21: Indigenous Location Names</li>
+        <li>SA3_CODE21: Statistical Area 3 Codes</li>
+          <li>SA3_NAME21: Statistical Area 3 Code Names</li>
+          <li>SA4_CODE21: Statistical Area 4 Codes</li>
+          <li>SA4_NAME21: Statistical Area 4 Code Names</li>
+          <li>STE_NAME21: Name of state</li>
+          <li>STE_CODE21: Code or identifier for the state</li>
           <li>AREASQKM: Area measurement in square kilometers</li>
           <li>SHAPE_Leng: Shape length of LGA</li>
           <li>SHAPE_Area: Shape area of LGA</li>

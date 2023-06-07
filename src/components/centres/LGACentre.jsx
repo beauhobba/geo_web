@@ -40,8 +40,8 @@ function LGACentre() {
         </div>
         <div>
           <ul style={{ listStyle: "none", padding: 0 }}>
-            <li>STE_NAME21: Name of a state or province</li>
-            <li>STE_CODE21: Code or identifier for a state or province</li>
+            <li>STE_NAME21: Name of a state</li>
+            <li>STE_CODE21: Code or identifier for a state</li>
             <li>AREASQKM: Area measurement in square kilometers</li>
             <li>SHAPE_Leng: Shape length of LGA</li>
             <li>SHAPE_Area: Shape area of LGA</li>
