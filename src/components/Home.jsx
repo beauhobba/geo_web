@@ -32,11 +32,14 @@ function Home() {
           OF AUSTRAIA
         </h1>
         <p style={{ color: colors.txt_2 }}>
-          This website is dedicated to providing easy to access Australian data
+          This website is dedicated to providing easy to access and <b>free</b> Australian data
           <br />
-          Statistics are created using python scripts located here:{" "}
+          Last Updated: <b>7/6/2023</b>
+          <br/>
+          <br/>
+          Statistics are created using official government data and python scripts located here:{" "}
           <a href="https://github.com/beauhobba/Database-Tools" style={{ color: colors.txt_3 }}>
-            Geo Database Tools
+            Github
           </a>
         </p>
         <div style={{ color: "#EDF5E1" }}>
