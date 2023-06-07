@@ -31,7 +31,7 @@ function Coffee() {
           alt="Buy me a coffee"
           style={{height: 55}}
         />
-        <p style={{ color: colors.txt }}>Buy me a coffee</p>
+        <p style={{ color: colors.txt }}>Support this website</p>
       </a>
     </div>
   );
