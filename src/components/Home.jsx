@@ -43,9 +43,6 @@ function Home() {
           <br></br>
           {/* <p style={{ color: "red" }}>ToDo</p>
           <ol>
-            <li>
-              SA2/SA3/MESH Block/Latitude and Longitude/Postcode to Remoteness
-            </li>
             <li>Postcode to Population</li>
             <li>Postcode to Road ID</li>
             <li>

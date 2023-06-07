@@ -27,7 +27,7 @@
         "mapboxfunction": {
           "deploymentBucketName": "amplify-amplify94e2c31a53164-staging-145327-deployment",
           "s3Key": "amplify-builds/mapboxfunction-4a34315970636a4a5a54-build.zip",
-          "mapbox": "pk.eyJ1IjoiYmVhdWhvYmJhIiwiYSI6ImNsZzFqZzNjdjFoZXYzZXA2NjZvankydXcifQ.l3ukg3WXsGukMmMvf_PvbA"
+          "mapbox": "pk.eyJ1IjoiYmVhdWhvYmJhIiwiYSI6ImNsaWxlbHFrYzBuOTUzbGxncXFlaWdocmQifQ.EAFXDp3vdnUt3_P484DZKQ"
         }
       },
       "storage": {
