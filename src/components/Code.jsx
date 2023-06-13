@@ -2,6 +2,7 @@ import { Amplify } from "aws-amplify";
 import { MeshBlockCentre } from "./centres";
 import awsconfig from "../aws-exports";
 
+import { Helmet } from "react-helmet";
 import colors from "./Colours";
 import CodeSnippetPython from "./CodeSnippetPython"
 import CodeSnippetJS from "./CodeSnippetJS"
@@ -23,6 +24,13 @@ function Code() {
         flexDirection: "column",
       }}
     >
+      <Helmet>
+        <title>Code - australiadatabases.com</title>
+        <meta
+          name="description"
+          content="How to use python and javascript to display geographic maps of Australia using plotly and geopandas"
+        />
+      </Helmet>
       <div
         style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif" }}
       >

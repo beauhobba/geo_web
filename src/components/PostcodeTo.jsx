@@ -6,6 +6,7 @@ import awsconfig from "../aws-exports";
 import colors from "./Colours";
 import React from "react";
 
+import { Helmet } from "react-helmet";
 Amplify.configure(awsconfig);
 
 function PostcodeTo() {
@@ -21,6 +22,14 @@ function PostcodeTo() {
         flexDirection: "column",
       }}
     >
+      <Helmet>
+        <title>Postcode - australiadatabases.com</title>
+        <meta
+          name="description"
+          content="Accurate latitude and longitude to postcodes"
+        />
+      </Helmet>
+
       <div
         style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif" }}
       >

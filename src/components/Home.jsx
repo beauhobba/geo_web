@@ -2,6 +2,7 @@ import React, { Text } from "react";
 import Coffee from "./CoffeeBuy";
 import colors from "./Colours"
 import Graph from "./Graph"
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
@@ -14,6 +15,13 @@ function Home() {
         minHeight: '100vh'
       }}
     >
+      <Helmet>
+        <title>Home - australiadatabases.com</title>
+        <meta
+          name="description"
+          content="Provides easy to access and free Australian data on geographic data such as latitude longitude, postcodes, SA2, SA3, mesh blocks and roads"
+        />
+      </Helmet>
       <div
         style={{
           textAlign: "center",

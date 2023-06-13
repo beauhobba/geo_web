@@ -11,6 +11,7 @@ import awsconfig from "../aws-exports";
 import colors from "./Colours";
 import React from "react";
 
+import { Helmet } from "react-helmet";
 Amplify.configure(awsconfig);
 
 function RegionCentres() {
@@ -40,6 +41,13 @@ function RegionCentres() {
         flexDirection: "column",
       }}
     >
+      <Helmet>
+        <title>Centres - australiadatabases.com</title>
+        <meta
+          name="description"
+          content="Centroids of LGAs, Mesh Blocks, SA1, SA2, SA3 and SA4"
+        />
+      </Helmet>
       <div
         style={{ color: colors.txt, fontSize: 50, fontFamily: "sans-serif" }}
       >

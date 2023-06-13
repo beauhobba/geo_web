@@ -6,8 +6,8 @@ export default (
 
       <Route path="/" />
       <Route path="/code"  />
-      <Route path="/postcodeto"  />
-      <Route path="/regioncentres" />
+      <Route path="/postcode"  />
+      <Route path="/centres" />
 
     </Route>
 );

@@ -22,8 +22,8 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/code" element={<Code />} />
-      <Route path="/postcodeto" element={<PostcodeTo />} />
-      <Route path="/regioncentres" element={<RegionCentres />} />
+      <Route path="/postcode" element={<PostcodeTo />} />
+      <Route path="/centres" element={<RegionCentres />} />
     </Routes>
     <Footer />
   </Router>,

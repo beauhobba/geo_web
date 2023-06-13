@@ -22,10 +22,10 @@ function Navigation() {
             <NavLink to="/code" style={nav_link_style}>
               Code
             </NavLink>
-            <NavLink to="/postcodeto" style={nav_link_style}>
+            <NavLink to="/postcode" style={nav_link_style}>
               Postcode
             </NavLink>
-            <NavLink to="/regioncentres" style={nav_link_style}>
+            <NavLink to="/centres" style={nav_link_style}>
               Centroids
             </NavLink>
           </div>
