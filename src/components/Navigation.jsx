@@ -28,6 +28,9 @@ function Navigation() {
             <NavLink to="/centres" style={nav_link_style}>
               Centroids
             </NavLink>
+            <NavLink to="/sport" style={nav_link_style}>
+              Sport
+            </NavLink>
           </div>
 
     </div>

@@ -10,6 +10,7 @@ import {
   PostcodeTo,
   RegionCentres,
   Code,
+  Sport,
 } from "./components";
 import { Amplify, Storage, API } from 'aws-amplify';
 import awsconfig from './aws-exports';
@@ -24,6 +25,7 @@ ReactDOM.render(
       <Route path="/code" element={<Code />} />
       <Route path="/postcode" element={<PostcodeTo />} />
       <Route path="/centres" element={<RegionCentres />} />
+      <Route path="/sport" element={<Sport />} />
     </Routes>
     <Footer />
   </Router>,

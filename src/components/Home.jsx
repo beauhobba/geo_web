@@ -42,7 +42,7 @@ function Home() {
         <p style={{ color: colors.txt_2 }}>
           This website is dedicated to providing easy to access and <b>free</b> Australian data
           <br />
-          Last Updated: <b>7/6/2023</b>
+          Last Updated: <b>27/7/2023</b>
           <br/>
           <br/>
           Statistics are created using official government data and python scripts located here:{" "}
