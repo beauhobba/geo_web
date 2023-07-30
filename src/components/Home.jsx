@@ -42,10 +42,10 @@ function Home() {
         <p style={{ color: colors.txt_2 }}>
           This website is dedicated to providing easy to access and <b>free</b> Australian data
           <br />
-          Last Updated: <b>27/7/2023</b>
+          Last Updated: <b>30/7/2023</b>
           <br/>
           <br/>
-          Statistics are created using official government data and python scripts located here:{" "}
+          Statistics are created using official data (from the source), with python scripts being located here:{" "}
           <a href="https://github.com/beauhobba/Database-Tools" style={{ color: colors.txt_3 }}>
             Github
           </a>
