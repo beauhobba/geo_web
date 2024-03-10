@@ -4,6 +4,8 @@ import awsconfig from "../aws-exports";
 import colors from "./Colours";
 import React from "react";
 import { CodeBlock, hopscotch } from "react-code-blocks";
+import Coffee from "./CoffeeBuy";
+
 
 import { Helmet } from "react-helmet";
 Amplify.configure(awsconfig);
@@ -71,6 +73,26 @@ function Sport() {
         >
           2023 Player Data (json)
         </Link>
+        <br/> 
+
+        <Link
+          to="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/player_statistics_2024.json"
+          target="_blank"
+          download
+          style={{ color: colors.txt_2 }}
+        >
+          2024 Player Data (json)
+        </Link>
+        <Link
+          to="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/nrl_data_2024.json"
+          target="_blank"
+          download
+          style={{ color: colors.txt_2 }}
+        >
+          2024 Match Data (json)
+        </Link>
+
+
         <div
           style={{
             color: colors.txt_3,
@@ -125,7 +147,15 @@ function Sport() {
           showLineNumbers={false}
           codeBlock
         />
+
+
       </div>
+      
+      <div style={{margin: "20px"}}>
+      <Coffee />
+      </div>
+
+
     </div>
   );
 }
