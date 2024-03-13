@@ -92,6 +92,46 @@ function Sport() {
           2024 Match Data (json)
         </Link>
 
+        <div style={{flexDirection: 'row', marginTop: 10}}>
+        <Link
+          to="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/player_data_txt_2023.rar"
+          target="_blank"
+          download
+          style={{ color: colors.txt_2, margin: 10 }}
+        >
+          2023 Individual Player Data (txt, zip)
+        </Link>
+
+        <Link
+          to="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/player_data_csv_2023.rar"
+          target="_blank"
+          download
+          style={{ color: colors.txt_2,margin: 10 }}
+        >
+          2023 Individual Player Data (csv, zip)
+        </Link>
+        </div>
+        <div style={{flexDirection: 'row'}}>
+        <Link
+          to="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/match_data_2023.txt"
+          target="_blank"
+          download
+          style={{ color: colors.txt_2, margin: 10 }}
+        >
+          2023 Match Data (txt)
+        </Link>
+
+        <Link
+          to="https://geo145327-staging.s3.ap-southeast-2.amazonaws.com/public/match_data_2023.csv"
+          target="_blank"
+          download
+          style={{ color: colors.txt_2,margin: 10 }}
+        >
+          2023 Match Data (csv)
+        </Link>
+        </div>
+
+
 
         <div
           style={{
